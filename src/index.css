@@ -1,0 +1,278 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0f0f;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.Dze {
+  top: 20px;
+  left: 20px;
+  position: absolute;
+}
+
+.Dze img {
+  width: 33px;
+}
+
+.headerCS {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  width: 444px;
+}
+
+.headerCS img {
+  right: -24px;
+  position: relative;
+}
+
+.mainCS {
+  width: 444px;
+}
+
+.errorCS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border: 1px solid red;
+  border-radius: 50px;
+  color: darkred;
+  font-weight: 700;
+  font-size: 36px;
+  padding: 18px;
+  margin: 0;
+}
+
+.errorCS span {
+  font-size: 100px;
+}
+
+img {
+  width: 44px;
+}
+
+h1 {
+  font-size: 18px;
+  font-family: 'Codystar';
+  color: rgb(20, 158, 202);
+  margin: 0 55px 0 0;
+}
+
+p {
+  font-size: 18px;
+  padding: 0 8px;
+  margin: 0 0 18px 0;
+}
+
+.startCS {
+  width: 202px;
+  margin: 0 0 0 120px;
+}
+
+.startCS button {
+  font-family: Monaco;
+  color: rgb(20, 158, 202);
+}
+
+.progressCS {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+  gap: 18px;
+  margin-bottom: 36px;
+  color: rgb(221, 221, 221);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+progress {
+  width: 100%;
+  height: 10px;
+  grid-column: 1 / -1;
+  -webkit-appearance: none;
+}
+
+::-webkit-progress-bar {
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-progress-value {
+  border-radius: 100px;
+  background-color: rgb(20, 158, 202);
+}
+
+.progressCS b {
+  color: #f1f1f1;
+}
+
+.questPCS {
+  padding: 0 0 18px 8px;
+  margin: -18px 0 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.BNsCS {
+  font-family: Roboto;
+  color: #ddd;
+  display: flex;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 23px;
+  border-radius: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.4s;
+}
+
+.BNsCS:not([disabled]):hover {
+  background-color: transparent;
+}
+
+.optionBNsCS:not([disabled]):hover {
+  transform: translateX(10px);
+}
+
+.BNsCS[disabled]:hover {
+  cursor: default;
+}
+
+.nextBNCS {
+  float: right;
+  width: 120px;
+  height: 43px;
+  padding: 8px 0 0 24px;
+}
+
+.finishBNCS {
+  padding: 9px 0 0 20px;
+}
+
+.restartBNCS {
+  float: right;
+  color: rgb(20, 158, 202);
+}
+
+.optionsCS {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  gap: 10px;
+}
+
+.optionBNsCS.trueCS {
+  color: #f1f1f1;
+  background-color: rgb(20, 158, 202);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.optionBNsCS.falseCS {
+  color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.answerCS {
+  transform: translateX(20px);
+}
+
+.BNsCS.answerCS.falseCS {
+  opacity: 0.7;
+  color: black;
+  background-color: darkred;
+}
+
+.pointsPCS {
+  text-align: center;
+  color: #0f0f0f;
+  padding: 10px 0;
+  font-size: 36px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  background-color: rgb(20, 158, 202);
+}
+
+.timerCS {
+  display: flex;
+  float: left;
+  align-items: center;
+  width: 80px;
+  font-size: 18px;
+  border-radius: 100px;
+  padding: 5px 14px 5px 12px;
+  color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.timerCS span {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.loaderCS {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(20, 158, 202);
+}
+
+.loadingCS {
+  width: 50px;
+  height: 24px;
+  background: radial-gradient(circle closest-side, currentColor 90%, #0000) 0%
+      50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 50% 50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 100% 50%;
+  background-size: calc(100% / 3) 12px;
+  background-repeat: no-repeat;
+  animation: loader 1s infinite linear;
+}
+
+@keyframes loader {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .headerCS,
+  .mainCS {
+    width: 350px;
+  }
+
+  h1 {
+    font-size: 14px;
+    margin: 0 14px 0 0;
+  }
+
+  .headerCS img {
+    margin: 0 0 0 -14px;
+  }
+
+  .startCS button {
+    margin: 0 0 0 -44px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .headerCS {
+    margin-top: 88px;
+  }
+}
